@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100vh;
+      margin: 0;
+      background: #000;
+      background-image: url('./img/cont\ img.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .header img {
+      width: 120px;
+    }
+
+    .header button {
+      padding: 10px 20px;
+      background-color: #fcb900;
+      color: #000000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .header button:hover {
+      background-color: #000;
+      border: 2px solid gold;
+      color: gold;
+    }
+
+    .heading-section {
+    text-align: center;
+    padding-top:2rem ;
+  }
+
+  .heading-section h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff; /* Gold color */
+  }
+
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 20px 4rem;
+    }
+
+    .info-section {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      gap: 20px;
+    }
+
+    .info-box {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: #ffffff;
+      border: 2px solid gold;
+      padding: 50px;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .info-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      background: lightgoldenrodyellow;
+      font-weight: bolder;
+    }
+
+    .info-box i {
+      font-size: 40px;
+      color: #fcb900;
+      margin-bottom: 10px;
+      transition: transform 0.3s;
+    }
+
+    .info-box:hover i {
+      transform: scaleX(-1); /* Flip the icon horizontally */
+    }
+
+    .email-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      width: 100%;
+    }
+
+    .email-box {
+      text-align: center;
+      background-color: #fff;
+      padding: 50px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 2px solid gold;
+    }
+
+    .email-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      background: lightgoldenrodyellow;
+      font-weight: bolder;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .email-box i {
+      font-size: 30px;
+      color: #fcb900;
+      margin-bottom: 10px;
+    }
+
+    .email-links{
+      text-decoration: none;
+      color: black;
+      transition: all .5s linear;
+    }
+
+    .email-links:hover{
+      text-decoration: underline;
+      color: black;
+      transition: all .5s linear;
+    }
+
+
+    .footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #222;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .info-section {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .heading-section{
+        padding: 2rem;
+      }
+
+      .main{
+       padding: 20px 1rem;
+      }
+
+      .email-section{
+        margin-top: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <img src="./img/EQUITI LEND (1).png" alt="Logo">
+    <a href="./index.html"><button>Back to Home</button></a>
+  </header>
+
+  <div class="heading-section">
+    <h1>Connect With Us So We Can Connect You</h1>
+  </div>
+  
+  <main class="main">
+    <!-- Location and Phone Section -->
+    <div class="info-section">
+      <a href="https://www.google.com/maps/place/171+Esplanade+W+%23560,+North+Vancouver,+BC+V7M+3J9,+Canada/@49.3119896,-123.0850321,17z/data=!3m1!4b1!4m6!3m5!1s0x5486704cafe55555:0x8d6571fd76a14558!8m2!3d49.3119861!4d-123.0824572!16s%2Fg%2F11lr3qz9rq?entry=ttu&g_ep=EgoyMDI1MDEwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="text-decoration: none; color: black;"> <div class="info-box">
+        <i class='bx bx-map'></i>
+       <p>#560 – 171 Esplanade W</p>
+        <p>North Vancouver, BC V1Y 8K5</p>
+      </div></a>
+
+      <div class="info-box">
+        <i class='bx bx-phone'></i>
+        <p>Phone: (Insert Number)</p>
+      </div>
+    </div>
+
+    <!-- Email Section -->
+    <section class="email-section">
+     <a href="mailto:equiti@EQUITILEND.ca" class="email-links"> <div class="email-box">
+        <i class='bx bx-envelope'></i>
+        <p>General Inquiries</p>
+        <p>equiti@EQUITILEND.ca</p>
+      </div></a>
+    
+      <a href="mailto:invest@EQUITILEND.ca" class="email-links">  <div class="email-box">
+        <i class='bx bx-user'></i>
+        <p>Investor Relations</p>
+        <p>invest@EQUITILEND.ca</p>
+      </div></a>
+
+      <a href="mailto:solutions@EQUITILEND.ca" class="email-links">  <div class="email-box">
+        <i class='bx bx-chat'></i>
+        <p>Borrower Inquiries</p>
+        <p>solutions@EQUITILEND.ca</p>
+      </div></a>
+
+      <a href="mailto:approved@EQUITILEND.ca" class="email-links">  <div class="email-box">
+        <i class='bx bx-check-shield'></i>
+        <p>Broker Submissions</p>
+        <p>approved@EQUITILEND.ca</p>
+      </div></a>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Connections made through head mortgage professional Armando Cuccione licensed with The Mortgage Advantage.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mortgage Application Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #000000, #1a1a1a, #3d3d3d, #1a1a1a);
+      color: #fff; /* White text for readability */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 110vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: #111; /* Darker black for contrast */
+      padding: 40px;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+      border: 2px solid #ffbb00; /* Gold border for luxury appeal */
+
+    }
+
+    .form-container h1 {
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+      color: #fcb900; /* Gold for elegance */
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff; /* White for labels */
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #fcb900; /* Gold border for input fields */
+      border-radius: 5px;
+      background-color: #222; /* Dark background for inputs */
+      color: #fff;
+      font-size: 16px;
+      outline: none;
+      transition: border 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: #fff; /* White border on focus */
+    }
+
+    .form-group textarea {
+      resize: none;
+      height: 80px;
+    }
+
+    .form-button {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .form-button button {
+      padding: 10px 30px;
+      background-color: #fcb900; /* Gold for the submit button */
+      color: #000;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .form-button button:hover {
+      background-color: #d89a00;
+      transform: scale(1.05);
+    }
+
+    .form-note {
+      font-size: 12px;
+      color: #aaa;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .form-container {
+        padding: 20px;
+      }
+
+      .form-container h1 {
+        font-size: 24px;
+      }
+
+      .form-group input,
+      .form-group select,
+      .form-group textarea {
+        font-size: 14px;
+      }
+
+      .form-button button {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 389px){
+      body{
+        height: 140vh;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Application Form</h1>
+    <form action="submit-form.php" method="POST">
+      <div class="form-group">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+      </div>
+      <div class="form-group">
+        <label for="funds">How much funds are you looking for?</label>
+        <input type="number" id="funds" name="funds" placeholder="Enter the amount (e.g., 50000)" required>
+      </div>
+      <div class="form-group">
+        <label for="propertyValue">What is the value of the property you are financing?</label>
+        <input type="number" id="propertyValue" name="propertyValue" placeholder="Enter the property value" required>
+      </div>
+      <div class="form-group">
+        <label for="ownership">Do you own the property or are you buying it?</label>
+        <select id="ownership" name="ownership" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="own">I own the property</option>
+          <option value="buying">I am buying it</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="propertyAddress">What is the property address?</label>
+        <textarea id="propertyAddress" name="propertyAddress" placeholder="Enter the property address" required></textarea>
+      </div>
+      <div class="form-button">
+        <button type="submit">Submit Application</button>
+      </div>
+      <p class="form-note">Your information is safe and secure with us.</p>
+    </form>
+  </div>
+</body>
+</html>
